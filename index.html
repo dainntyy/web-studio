@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>WebStudio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="nav">
+                <li>
+                    <a href=" ./index.html" class="name"><span class="web">Web</span>Studio</a>
+                </li>
+                <li>
+                    <div class="menu-items">
+                        <ul id="menu">
+                            <li>
+                                <a href="#doings" class="link">Студія</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="link">Портфоліо</a>
+                            </li>
+                            <li>
+                                <a href="#our-experience" class="link">Досвід</a>
+                            </li>
+                            <li>
+                                <a href="#team" class="link">Команда</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="link">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="#login-form" class="login-but">Log in</a>
+                </li>
+
+                <li class="container">
+                        <button class="dropdown-btn" tabindex="0" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <div class="hamburger-lines" id="hamburger-btn">
+                                <div class="line line1"></div>
+                                <div class="line line2"></div>
+                                <div class="line line3"></div>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu">
+                                <a href="#doings" class="link">Студія</a>
+                                <a href="#portfolio" class="link">Портфоліо</a>
+                                <a href="#our-experience" class="link">Досвід</a>
+                                <a href="#team" class="link">Команда</a>
+                                <a href="#contacts" class="link">Контакти</a>
+                            </div>
+                        </button>
+                </li>
+            </ul>
+            
+        </nav>
+        
+<!-- <div class="container nav-container">
+    <input class="checkbox" type="checkbox" name="" id="" />
+    <div class="hamburger-lines">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </div>
+
+</div> -->
+        
+
+        <!-- <ul class="contacts">
+            <li><a href="mailto:info@devstudio.com " class="mail">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111 " class="phone">+380961111111</a></li>
+        </ul> -->
+
+        
+        <!-- <a href="#registration-form" class="link">Registration</a> -->
+    </header>
+    <main>
+        <section class="solutions">
+            <h1 class="solutions-text">Ефективні рішення для <br> вашого бізнесу</h1>
+            <button type="button" class="solutions-button">Замовити послугу</button>
+        </section>
+        <section>
+            <h2 hidden>Наші переваги</h2>
+            <div>
+                <ul class="advantages">
+                    <li>
+                        <h3 class="advantage">Увага до деталей</h3>
+                        <p class="advantage-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    </li>
+                    <li>
+                        <h3 class="advantage">Пунктуальність</h3>
+                        <p class="advantage-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li>
+                        <h3 class="advantage">Планування</h3>
+                        <p class="advantage-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+                    <li>
+                        <h3 class="advantage">Сучасні технології</h3>
+                        <p class="advantage-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+        <section id="doings">
+            <h2 class="section-name">Чим ми займаємося</h2>
+            <ul class="doings">
+                <li><img src="images/img1.jpg" alt="Людина працює над кодом " width="370" height="270"></li>
+                <li><img src="images/img2.jpg" alt="Людина розробляє дизайн мобільного додатку " width="370" height="270"></li>
+                <li><img src="images/img3.jpg" alt="Кольоровий спектр на графічному планшеті " width="370" height="270"></li>
+            </ul>
+        </section>
+        <section id="our-experience" class="experience">
+            <h2 class = "section-name">Наш досвід</h2>
+            <p class="experience-text">Завдяки багаторічному досвіду наша команда успішно<br>реалізувала проекти програмного забезпечення для різноманітних
+            клієнтів.<br>Ознайомтесь із нашими проектами, аби запевнитись!</p>
+        </section>
+        <section  id = "portfolio">
+            <h2 class="section-name">Проєкти</h2>
+            <h1 hidden>Портфоліо</h1>
+            <ul class="portfolio-buttons">
+                <li>
+                    <button type="button" class="portfolio-button">Усі</button>
+                </li>
+                <li>
+                    <button type="button" class="portfolio-button">Веб-сайти</button>
+                </li>
+                <li>
+                    <button type="button" class="portfolio-button">Додатки</button>
+                </li>
+                <li>
+                    <button type="button" class="portfolio-button">Дизайн</button>
+                </li>
+                <li>
+                    <button type="button" class="portfolio-button">Маркетинг</button>
+                </li>
+            </ul>
+        </section>
+        <section class="project-photos" id="projects">
+            <ul class="posts">
+                <li>
+                    <img src="images/tech.jpg" alt="Ноутбук з відкритою веб-сторінкою" width="370" height="294">
+                    <h3 class="post-name">Технокряк</h3>
+                    <p class="post-info">Веб-сайт</p>
+                </li>
+                <li>
+                    <img src="images/neworlean.jpg" alt="Двоє чоловіків грають у баскетбол" width="370" height="294">
+                    <h3 class="post-name">Постер New Orlean vs Golden Star</h3>
+                    <p>Дизайн</p>
+                </li>
+                <li>
+                    <img src="images/seafood.jpg" alt="Назва ресторану на постері з зображенням риби" width="370"
+                        height="294">
+                    <h3 class="post-name">Ресторан Seafood</h3>
+                    <p class="post-info">Додаток</p>
+                </li>
+                <li>
+                    <img src="images/prime.jpg" alt="Навушники" width="370" height="294">
+                    <h3 class="post-name">Проект Prime</h3>
+                    <p class="post-info">Маркетинг</p>
+                </li>
+                <li>
+                    <img src="images/boxes.jpg" alt="Коробки" width="370" height="294">
+                    <h3 class="post-name">Проект Boxes</h3>
+                    <p class="post-info">Додаток</p>
+                </li>
+                <li>
+                    <img src="images/inspiration.jpg" alt="Монітор комп'ютера" width="370" height="294">
+                    <h3 class="post-name">Inspiration has no Borders</h3>
+                    <p class="post-info">Веб-сайт</p>
+                </li>
+                <li>
+                    <img src="images/limitededition.jpg" alt="Розгорнутий журнал" width="370" height="294">
+                    <h3 class="post-name">Видання Limited Edition</h3>
+                    <p class="post-info">Дизайн</p>
+                </li>
+                <li>
+                    <img src="images/lab.jpg" alt="Бірка з одягу" width="370" height="294">
+                    <h3 class="post-name">Проєкт LAB</h3>
+                    <p class="post-info">Маркетинг</p>
+                </li>
+                <li>
+                    <img src="images/business.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+                    <h3 class="post-name">Growing Business</h3>
+                    <p class="post-info">Дизайн</p>
+                </li>
+            </ul>
+        </section>
+        <section class="team"  id = "team">
+            <h2 class="section-name">Наша команда</h2>
+            <ul class="people">
+                <li class="people-box">
+                    <img src="images/igor.jpg" alt="Чоловік в окулярах посміхається " height="260" width="270">
+                    <h3 class="team-names">Ігор Дем'яненко</h3>
+                    <p class="team-text">Product Designer</p>
+                </li>
+                <li class="people-box">
+                    <img src="images/olga.jpg" alt="Усміхнена жінка в окулярах " height="260" width="270">
+                    <h3 class="team-names">Ольга Рєпіна</h3>
+                    <p class="team-text">Frontend Developer</p>
+
+                </li>
+                <li class="people-box">
+                    <img src="images/mykola.jpg" alt="Чоловік посміхається " height="260" width="270">
+                    <h3 class="team-names">Микола Тарасов</h3>
+                    <p class="team-text">Marketing</p>
+                </li>
+                <li class="people-box">
+                    <img src="images/mukhailo.jpg" alt="Чоловік в окулярах " height="260" width="270">
+                    <h3 class="team-names">Михайло Єрмаков</h3>
+                    <p class="team-text">UI Designer</p>
+                </li>
+            </ul>
+        </section>
+        <div class="centered-form">
+            <!-- Форма авторизації -->
+            <section id="login-form" class="form-container">
+                <h2>Авторизація</h2>
+                <form action="/submit" method="post">
+                    <label for="username" class="login-text">Ім'я користувача:</label>
+                    <input type="text" id="username" name="username" required>
+            
+                    <label for="password" class="login-text">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+            
+                    <div class="button-container">
+                        <input type="submit" value="Увійти" class="login-button">
+                        <input type="reset" value="Очистити" class="login-button">
+                    </div>
+                </form>
+            </section>
+            
+            <!-- Форма реєстрації -->
+            <section id="registration-form" class="form-container">
+                <h2>Не маєш акаунту? Реєструйся!</h2>
+                <form action="/submit" method="post">
+                    <label for="new-username">Ім'я користувача:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+            
+                    <label for="new-password">Пароль:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+            
+                    <label for="email">Пошта:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="country">Країна:</label>
+                    <select id="country" name="country">
+                        <option value="ukraine">Україна</option>
+                        <option value="poland">Польща</option>
+                        <option value="germany">Германія</option>
+                    </select>
+            
+                    <label>Стать:</label>
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Чоловіча</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Жіноча</label>
+                    </div>
+            
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+            
+                    <div>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Я хочу отримувати повідомлення з новинками і акціями.</label>
+                    </div>
+            
+                    <div class="button-container">
+                        <input type="submit" value="Зареєструватись" class="registration-button">
+                        <input type="reset" value="Очистити" class="registration-button">
+                    </div>
+            
+                </form>
+            </section>
+        </div>
+        
+
+    </main>
+    <footer class="footer">
+        <div id = "footer">
+            <a href="./index.html " lang="en" class="footer-name"><span class="footer-web">Web</span>Studio</a>
+            <address id="contacts">
+                <ul class="address">
+                    <li>
+                        <a href='https://goo.gl/maps/CPtrU1FHBa2aNyZL9' target='_blank' rel='noopener noreferrer nofollow'
+                            class="street">м. Київ, пр-т Лесі Українки, 26</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@devstudio.com " class="footer-mail">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111 " class="footer-phone">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+            <div class="copyright">
+                &copy; 2023 WebStudio. Усі права захищенні.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

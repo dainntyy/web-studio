@@ -1,0 +1,640 @@
+:root {
+    --color-primary: #212121;
+    --color-second: #2196F3;
+    --button-color: #188CE8;
+    --color-third: #757575;
+    --background-color: #2F303A;
+    --portfolio-button: #F5F4FA;
+    --team-color: #F5F4FA;
+    --header: #ECECEC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: var(--color-primary);
+    letter-spacing: 3%;
+    max-width: 1600;
+    
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 119px;
+    height: 80px;
+    
+}
+
+.header {
+    background-color: var(--header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170;
+}
+
+.link {
+    color: var(--color-primary);
+}
+
+.link.current {
+    color: var(--color-second);
+}
+
+.name {
+    font-size: 26px;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1.2;
+    font-weight: 700px;
+    margin-left: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.web {
+    color: var(--color-second);
+}
+
+.nav {
+    gap: 30px;
+    list-style: none;
+    align-items: space-around;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 5.7;
+    letter-spacing: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav #menu li {
+    padding: 0px 30px;
+    cursor: pointer;
+    line-height: 70px;
+    transition: all 0.3s ease-out;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger-lines {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 4px;
+    width: 30px;
+    background-color: var(--color-primary);
+    margin: 6px 0;
+}
+
+.dropdown-btn {
+    display: block;
+    background-color: var(--header);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--header);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-btn:focus .dropdown-menu,
+.dropdown-btn:hover  .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 2%;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--button-color);
+    color: #fff;
+    
+}
+
+
+@media (max-width: 1050px) {
+    nav #menu {
+            display: none;
+        }
+    .hamburger-lines {
+        display: block;
+    }
+    .login-but {
+        margin-left: 500px;
+    }
+}
+
+
+.login-but {
+    font-weight: 700;
+    margin-right: auto;
+    color: var(--color-primary);
+}
+
+.link:hover,
+.link:focus, 
+.login-but:focus, 
+.login-but:hover {
+    color: var(--color-second);
+}
+
+.mail {
+    color: var(--color-third);
+    line-height: 1.1;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+
+.phone {
+    color: var(--color-third);
+    line-height: 1.1;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+
+.contacts :hover,
+.contacts :focus {
+    color: var(--color-second);
+}
+
+
+.solutions {
+    background-color: var(--background-color);
+    text-align: center;
+    letter-spacing: 6%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0   auto;
+}
+
+.solutions-text {
+    color: white;
+    font-size: 44px;
+    font-weight: 900px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.solutions-button {
+    font-family: inherit;
+    background-color: var(--color-second);
+    color: white;
+    line-height: 3.1;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 215px;
+}
+
+.solutions-button:hover,
+.solutions-button:focus {
+    background-color: var(--button-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.advantages{
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+.advantage {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary);
+    
+}
+
+.advantage-text {
+    font-size: 14px;
+    color: var(--color-third);
+    line-height: 1.5;
+    font-weight: 400px;
+}
+
+.section-name {
+    font-size: 36px;
+    font-weight: 700px;
+    color: var(--color-primary);
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.experience-text {
+    font-size: 14px;
+    color: var(--color-third);
+    line-height: 1.5;
+    font-weight: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.doings li{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 30px;
+}
+
+#doings, 
+#portfolio, 
+#team, 
+#projects {
+    text-align: center;
+}
+
+.team,
+.experience {
+    background-color: var(--team-color);
+}
+
+.team-names,
+.login-text{
+    font-size: 16px;
+    font-weight: 500px;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.team-text {
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--color-third);
+    line-height: 1.2;
+}
+
+
+.portfolio-button,
+.login-button,
+.registration-button {
+    font-family: inherit;
+    background-color: var(--portfolio-button);
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 2.25;
+    font-weight: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.portfolio-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-button {
+    margin: 0 8px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus,
+.login-button:hover,
+.login-button:focus,
+.registration-button:focus,
+.registration-button:hover {
+    background-color: var(--color-second);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.posts {
+    letter-spacing: 6%;
+}
+
+.post-name {
+    font-size: 18px;
+    font-weight: 700px;
+    line-height: 2;
+    color: var(--color-primary);
+}
+
+.post-info {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.9;
+    color: var(--color-third);
+}
+
+.footer {
+    background-color: var(--background-color);
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 25%;
+    padding-bottom: 60px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer-name {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+.footer-web {
+    color: var(--color-second);
+}
+
+.address, .copyright{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-third);
+    font-weight: 400px;
+    font-style: normal;
+}
+
+.address {
+    margin-top: 20px;
+}
+.footer-mail {
+    color: var(--color-third);
+}
+
+.footer-phone {
+    color: var(--color-third);
+}
+
+.street {
+    color: white;
+}
+
+/* Стилі для форм в розділах "Login" і "Registration" */
+.form-container {
+    background-color:var();
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    /* Ширина форми 45% від контейнера */
+    width: 300px;
+        /* Фіксований розмір контейнера форми */
+    color: var(--color-primary);
+    
+    
+}
+
+
+.centered-form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#registration-form{
+    width: 400px;
+    margin-left: -30px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-bottom: 10px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.form-container select,
+.form-container input {
+    border-radius: 5px;
+    border: 1px solid var(--button-color)
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    /* Рівномірне розташування кнопок по обидва боки */
+    margin-top: 10px;
+    /* Доданий відступ між кнопками та іншими елементами форми */
+}
+
+
+.posts{
+    margin: 34px, 215px, 94px, 215px;
+
+}
+
+.posts li {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: space-between;
+    margin-inline: 30px;
+    
+}
+
+.people-box{
+    background-color: #fff;
+    margin-bottom: 94px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 30px;
+}
+
+/* Залишений попередній код */
+
+@media (max-width: 1200px) {
+    header {
+        padding: 0 60px;
+        /* Зменшено відступи для адаптації */
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 0 30px;
+        /* Зменшено відступи для адаптації */
+    }
+
+    .nav {
+        gap: 20px;
+    }
+        .login-but {
+            margin-left: 400px;
+        }
+}
+
+@media (max-width: 768px) {
+    /* .nav {
+        flex-direction: column;
+        /* Змінено напрямок відображення для адаптації */
+        align-items inline-block
+        /* Змінено вирівнювання для адаптації */
+
+    nav #menu {
+        display: none;
+    }
+
+    .hamburger-lines {
+        display: block;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+    .hamburger-lines {
+        position: absolute;
+        left: 10px;
+        transform: translateY(-60%);
+    }
+
+    .dropdown-menu {
+        top: 80px;
+    }
+    .login-but {
+            margin-left: 0px;
+    }
+
+    .solutions-text {
+        font-size: 36px;
+    }
+
+    .solutions-button {
+        line-height: 3.1;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 170px;
+    }
+
+    .solutions {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 10px;
+        /* Зменшено розмір шрифту для адаптації */
+    }
+    .advantages {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    .portfolio-button {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+    .portfolio-buttons {
+        display: block;
+        justify-content: space-between;
+        margin-top: -40px;
+        margin-left: -30px;
+    }
+        #registration-form {
+            width: 300px;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    .centered-form {
+        margin-left: 0;
+    }
+    #login-form {
+        font-size: 12px;
+    }
+    .login-button, .registration-button{
+        font-size: 14px;
+    }
+    .people, .posts, .doings {
+        margin-left: -40px;
+    }
+        
+}
+
+.form-container {
+    background: linear-gradient(45deg, #8ECAE6, #fff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
